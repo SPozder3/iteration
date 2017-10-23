@@ -11,3 +11,7 @@ iterate(names)
 print ""
 
 print_scores(names, scores)
+
+print ""
+
+congratulations(names, scores)
