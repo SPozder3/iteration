@@ -20,3 +20,7 @@ def congratulations(names, scores):
 	for i in range(0, len(names)):
 		if (scores[i] == 100):
 			print "Congrats", names[i], "! You got a perfect score!"
+
+def favorite_class(names, the_class):
+	for i in range(0, len(the_class)):
+		print names[i], "'s favorite class is", the_class[i]

@@ -15,3 +15,8 @@ print_scores(names, scores)
 print ""
 
 congratulations(names, scores)
+
+print ""
+
+the_class = ["apcsp", "math", "english", "spanish", "apeuro"]
+favorite_class(names, the_class)
