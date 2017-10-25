@@ -20,3 +20,13 @@ print ""
 
 the_class = ["apcsp", "math", "english", "spanish", "apeuro"]
 favorite_class(names, the_class)
+
+print ""
+
+score = [1, 3, 4, 2, 4, 15]
+
+print sum(score)
+
+print max(score)
+# sum = sum(numbers)
+# print sum
