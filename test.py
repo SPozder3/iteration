@@ -35,6 +35,4 @@ print ""
 
 print average(score)
 
-print min(score)
-
-print second_min(score)
+print curved_average(score)
