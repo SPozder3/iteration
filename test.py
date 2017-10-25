@@ -30,3 +30,11 @@ print sum(score)
 print max(score)
 # sum = sum(numbers)
 # print sum
+
+print ""
+
+print average(score)
+
+print min(score)
+
+print second_min(score)

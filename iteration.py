@@ -48,3 +48,33 @@ def max(numbers):
 	# a) write a function that finds the average of the scores
 	# b) write a second function that also finds the average, 
 	#    but drops the lowest 2 scores
+
+def average(numbers):
+	total = 0
+	for n in numbers:
+		total += n
+	
+	av = total/len(numbers)
+
+	return av
+
+def min(numbers):
+	current_min = numbers[0]
+	for n in numbers:
+		if n < current_min:
+			current_min = n
+
+	return current_min
+
+def second_min(numbers):
+	current_min = numbers[0]
+	for n in numbers:
+		if n < current_min:
+			current_min = n
+
+	second_min = numbers[0]
+	for n in numbers:
+		if n < second_min and second_min > current_min:
+			second_min = n
+
+	return second_min
