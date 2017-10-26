@@ -39,4 +39,4 @@ print average(score)
 
 print ""
 
-print fixed_curved_average(score)
+print curved_average(score)
