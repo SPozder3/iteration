@@ -58,28 +58,52 @@ def average(numbers):
 
 	return av
 
-def remove_min(numbers):
+#def remove_min(numbers):
+	#current_min = numbers[0]
+	#for n in numbers:
+		#if n <= current_min:
+			#current_min = n
+	#numbers.remove(current_min)
+	#return numbers
+
+#def curved_average(numbers):
+
+	#numbers = remove_min(numbers)
+	#numbers1 = remove_min(numbers)
+
+	#total = 0
+	#for n in numbers1:
+		#total += n
+	#avg = total / float(len(numbers1))
+
+	#return avg
+
+def min(numbers):
 	current_min = numbers[0]
+
 	for n in numbers:
-		if n <= current_min:
+		if n < current_min:
 			current_min = n
-	numbers.remove(current_min)
-	return numbers
 
-def curved_average(numbers):
-<<<<<<< HEAD
-	numbers1 = remove_min(numbers)
-	numbers = remove_min(numbers)
+	return current_min
 
-	return average(numbers)
-=======
-	numbers = remove_min(numbers)
-	numbers1 = remove_min(numbers)
+def second_min(numbers):
+	current_min = min(numbers)
+	current_second_min = [0]
 
-	total = 0
-	for n in numbers1:
-		total += n
-	avg = total / float(len(numbers1))
+	for n in numbers:
+		if current_min < n < current_second_min:
+			current_second_min = n
+
+	return current_second_min
+
+def fixed_curved_average(numbers):
+	first_minimum = min(numbers)
+	second_minimum = second_min(numbers)
+
+	
+	total = sum(numbers)
+	new_total= total - first_minimum - second_minimum
+	avg = new_total / float(len(numbers)-2)
 
 	return avg
->>>>>>> 2ad9ffdec1e57ad877656a39d6f6f5884e6c5823
