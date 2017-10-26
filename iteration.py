@@ -67,12 +67,7 @@ def remove_min(numbers):
 	return numbers
 
 def curved_average(numbers):
-	numbers = remove_min(numbers)
 	numbers1 = remove_min(numbers)
+	numbers = remove_min(numbers)
 
-	total = 0
-	for n in numbers1:
-		total += n
-	avg = total / float(len(numbers1))
-
-	return avg
+	return average(numbers)
