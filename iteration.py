@@ -24,3 +24,55 @@ def congratulations(names, scores):
 def favorite_class(names, the_class):
 	for i in range(0, len(the_class)):
 		print names[i], "'s favorite class is", the_class[i]
+
+# accumulation pattern - a type of iteration
+# keep track of other data as we go
+
+def sum(numbers):
+	total = 0
+	for n in numbers:
+		total += n
+
+	return total
+
+
+def max(numbers):
+	current_max = numbers[0]
+	for n in numbers:
+		if n > current_max:
+			current_max = n
+
+	return current_max
+
+# homework -> 
+	# a) write a function that finds the average of the scores
+	# b) write a second function that also finds the average, 
+	#    but drops the lowest 2 scores
+
+def average(numbers):
+	total = 0
+	for n in numbers:
+		total += n
+	
+	av = total/float(len(numbers))
+
+	return av
+
+def remove_min(numbers):
+	current_min = numbers[0]
+	for n in numbers:
+		if n <= current_min:
+			current_min = n
+	numbers.remove(current_min)
+	return numbers
+
+def curved_average(numbers):
+	numbers = remove_min(numbers)
+	numbers1 = remove_min(numbers)
+
+	total = 0
+	for n in numbers1:
+		total += n
+	avg = total / float(len(numbers1))
+
+	return avg
