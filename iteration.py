@@ -66,18 +66,6 @@ def average(numbers):
 	#numbers.remove(current_min)
 	#return numbers
 
-#def curved_average(numbers):
-
-	#numbers = remove_min(numbers)
-	#numbers1 = remove_min(numbers)
-
-	#total = 0
-	#for n in numbers1:
-		#total += n
-	#avg = total / float(len(numbers1))
-
-	#return avg
-
 def min(numbers):
 	current_min = numbers[0]
 
@@ -97,7 +85,7 @@ def second_min(numbers):
 
 	return current_second_min
 
-def fixed_curved_average(numbers):
+def curved_average(numbers):
 	first_minimum = min(numbers)
 	second_minimum = second_min(numbers)
 
